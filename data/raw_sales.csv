@@ -1,0 +1,6 @@
+txn_id,date,branch,item,qty,price
+101,2026-09-20,  kathmandu ,Espresso,2.0,180
+102,2026/09/21,Pokhara,Latte,1.0,250
+103,bad_date,kathmandu,Cappuccino,,220
+104,2026-09-23,  Lalitpur  ,Mocha,-3.0,280
+105,2026-09-24,Pokhara,Latte,4.0,250

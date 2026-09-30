@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-csv_file = Path("data/raw_sales.csv")
+csv_file = Path("./data/raw_sales.csv")
 
 if not csv_file.exists():
     csv_file.parent.mkdir(exist_ok=True)

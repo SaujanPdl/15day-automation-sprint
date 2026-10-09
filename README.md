@@ -26,4 +26,14 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Automatically calculates 13% VAT, gross, and net revenue.
   * Exports clean raw data along with branch and product summary sheets into an Excel workbook (`.xlsx`).
 
+---
+
+### Day 3: OpenPyXL Excel Formatting & Executive Styling (`Day_3/`)
+* **Problem Solved:** Transforms raw, unformatted Excel exports into executive-ready financial reports with custom styling and formatting.
+* **Tech Used:** `openpyxl`, `os`
+* **Features:**
+  * Ingests existing workbooks dynamically with `load_workbook()`.
+  * Applies executive styling with solid navy headers, bold white typography, and clean grid borders.
+  * Formats financial columns into standard currency representation (`NPR #,##0.00`).
+  * Calculates maximum string lengths across rows and dynamically auto-fits column widths to prevent truncation (`###`).
 

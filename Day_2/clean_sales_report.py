@@ -1,7 +1,7 @@
 from pathlib import Path
 import pandas as pd
 
-csv_file = Path("./data/raw_sales.csv")
+csv_file = Path("./Day_2/data/raw_sales.csv")
 
 if not csv_file.exists():
     csv_file.parent.mkdir(exist_ok=True)
@@ -58,7 +58,7 @@ print("\nBranch Summary:")
 print(branch_report)
 
 # Save to Excel with multiple sheets
-output_file = Path("data/sales_report.xlsx")
+output_file = Path("./Day_2/data/sales_report.xlsx")
 with pd.ExcelWriter(output_file) as writer:
     df.to_excel(writer, sheet_name="Cleaned Data", index=False)
     branch_report.to_excel(writer, sheet_name="Branch Summary", index=False)

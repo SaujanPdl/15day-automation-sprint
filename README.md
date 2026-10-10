@@ -37,3 +37,14 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Formats financial columns into standard currency representation (`NPR #,##0.00`).
   * Calculates maximum string lengths across rows and dynamically auto-fits column widths to prevent truncation (`###`).
 
+---
+
+### Day 4: Demo 1 - Multi-Branch Sales Reconciler Engine (`Day_4/`)
+* **Problem Solved:** Automates batch ingestion of regional branch sales workbooks, detects duplicate cross-branch invoices, flags missing entries, and generates an audited executive summary.
+* **Tech Used:** `pandas`, `openpyxl`, `pathlib`
+* **Features:**
+  * Uses `pathlib` globbing to dynamically batch-read every branch `.xlsx` workbook from a dedicated folder.
+  * Consolidates disparate branch datasets into a unified DataFrame using `pd.concat()` while stamping source origin.
+  * Audits records for data hygiene by flagging cross-branch duplicate invoice IDs and null/empty client values.
+  * Exports an executive multi-sheet master workbook containing high-level `Summary` metrics, `Consolidated_Sales`, and an itemized `Audit_Flags` sheet.
+  

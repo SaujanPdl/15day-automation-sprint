@@ -47,4 +47,15 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Consolidates disparate branch datasets into a unified DataFrame using `pd.concat()` while stamping source origin.
   * Audits records for data hygiene by flagging cross-branch duplicate invoice IDs and null/empty client values.
   * Exports an executive multi-sheet master workbook containing high-level `Summary` metrics, `Consolidated_Sales`, and an itemized `Audit_Flags` sheet.
-  
+
+
+---
+
+### Day 5: Demo 1 Polish - Sales Reconciler Engine & Executive Package (`Day_5/`)
+* **Problem Solved:** Manually consolidating multi-branch reports takes hours every week while missing duplicate invoice IDs and silent data entry omissions.
+* **Tech Used:** `pandas`, `openpyxl`, `pathlib`, `time`
+* **Features:**
+  * Terminal CLI runner with execution tracking, anomaly counts, and timing benchmarks.
+  * Automated batch ingestion across regional branch spreadsheets with origin tracking.
+  * Cross-branch data auditing that isolates duplicate invoice numbers and missing client records.
+  * Exports an executive multi-sheet workbook containing `Summary` KPIs, `Consolidated_Sales`, and an isolated `Audit_Flags` tab.

@@ -59,3 +59,14 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Automated batch ingestion across regional branch spreadsheets with origin tracking.
   * Cross-branch data auditing that isolates duplicate invoice numbers and missing client records.
   * Exports an executive multi-sheet workbook containing `Summary` KPIs, `Consolidated_Sales`, and an isolated `Audit_Flags` tab.
+
+---
+
+### Day 6: HTTP Requests & BeautifulSoup Web Scraping (`Day_6/`)
+* **Problem Solved:** Manually gathering catalog prices and inventory data across web listings is slow, error-prone, and unscalable.
+* **Tech Used:** `requests`, `beautifulsoup4`, `json`
+* **Features:**
+  * Configures realistic browser `User-Agent` headers to prevent request blocking.
+  * Navigates the HTML tree using both standard element methods (`.find()`, `.find_all()`) and CSS selectors (`.select()`).
+  * Cleans extracted strings by trimming newlines and whitespace using `.strip()`.
+  * Exports sanitized structured records into a formatted JSON dataset.

@@ -70,3 +70,14 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Navigates the HTML tree using both standard element methods (`.find()`, `.find_all()`) and CSS selectors (`.select()`).
   * Cleans extracted strings by trimming newlines and whitespace using `.strip()`.
   * Exports sanitized structured records into a formatted JSON dataset.
+
+---
+
+### Day 7: Headless Browser Scraping with Playwright (`Day_7/`)
+* **Problem Solved:** Standard HTTP requests fail on modern Single Page Applications (SPAs) where data is injected dynamically via client-side JavaScript.
+* **Tech Used:** `playwright`, `json`, `pathlib`
+* **Features:**
+  * Automates headless Chromium execution to parse client-hydrated DOM structures.
+  * Uses explicit element waiting (`wait_for_selector`) to handle asynchronous DOM updates without race conditions.
+  * Handles interactive multi-page pagination by detecting and clicking dynamic "Next" navigational controls.
+  * Extracts structured records into a clean, normalized JSON format.

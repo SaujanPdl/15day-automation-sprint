@@ -81,3 +81,15 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Uses explicit element waiting (`wait_for_selector`) to handle asynchronous DOM updates without race conditions.
   * Handles interactive multi-page pagination by detecting and clicking dynamic "Next" navigational controls.
   * Extracts structured records into a clean, normalized JSON format.
+
+
+---
+
+### Day 8: Automated Discord Webhook Alert Bot (`Day_8/`)
+* **Problem Solved:** Scraping engines and background jobs require instant notification systems so users don't need to manually monitor terminal outputs or poll databases.
+* **Tech Used:** `requests`, `python-dotenv`, `datetime`
+* **Features:**
+  * Dispatches structured Discord webhook payloads using RESTful HTTP POST requests.
+  * Dynamically computes pricing variance and savings percentages for triggered products.
+  * Formats rich embed cards featuring real-time timestamps, inline KPI fields, discount indicators, and direct store URLs.
+  * Secures sensitive webhook credentials using external `.env` configuration.

@@ -93,3 +93,15 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Dynamically computes pricing variance and savings percentages for triggered products.
   * Formats rich embed cards featuring real-time timestamps, inline KPI fields, discount indicators, and direct store URLs.
   * Secures sensitive webhook credentials using external `.env` configuration.
+
+---
+
+### Day 9: Demo 2 - Competitor Price & Deal Tracker Engine (`Day_9/`)
+* **Problem Solved:** E-commerce stores and consumers lose money by failing to track fluctuating competitor prices and missing short-lived discount opportunities.
+* **Tech Used:** `requests`, `beautifulsoup4`, `python-dotenv`, `json`
+* **Features:**
+  * Monitors target product listings dynamically with automated DOM traversal and regex price sanitization.
+  * Persists historical pricing data and baseline benchmarks inside a structured `price_history.json` database.
+  * Implements automated anomaly comparison logic triggering deal alerts when `current_price < historical_min * 0.95`.
+  * Logs ISO timestamps on every run to build a continuous pricing audit trail.
+  * Dispatches rich Discord webhook embeds when significant discounts are detected.

@@ -1,0 +1,50 @@
+{
+  "PROD-001": {
+    "title": "A Light in the Attic",
+    "url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "baseline_price": 51.77,
+    "historical_min": 51.77,
+    "history": [
+      {
+        "timestamp": "2026-10-15T11:49:28.046838",
+        "price": 51.77
+      }
+    ]
+  },
+  "PROD-002": {
+    "title": "Tipping the Velvet",
+    "url": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html",
+    "baseline_price": 53.74,
+    "historical_min": 53.74,
+    "history": [
+      {
+        "timestamp": "2026-10-15T11:49:28.046838",
+        "price": 53.74
+      }
+    ]
+  },
+  "PROD-003": {
+    "title": "Soumission",
+    "url": "https://books.toscrape.com/catalogue/soumission_998/index.html",
+    "baseline_price": 50.1,
+    "historical_min": 50.1,
+    "history": [
+      {
+        "timestamp": "2026-10-15T11:49:28.046838",
+        "price": 50.1
+      }
+    ]
+  },
+  "PROD-004": {
+    "title": "Sharp Objects",
+    "url": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html",
+    "baseline_price": 47.82,
+    "historical_min": 47.82,
+    "history": [
+      {
+        "timestamp": "2026-10-15T11:49:28.046838",
+        "price": 47.82
+      }
+    ]
+  }
+}

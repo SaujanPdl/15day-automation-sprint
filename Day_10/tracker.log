@@ -1,0 +1,14 @@
+2026-10-16 18:47:22,357 [INFO] Initializing background scheduler service...
+2026-10-16 18:47:22,358 [INFO] Starting scheduled pricing audit cycle...
+2026-10-16 18:47:23,923 [INFO] Scraped 'A Light in the Attic' -> Current: £51.77
+2026-10-16 18:47:23,923 [INFO] Initialized baseline for 'A Light in the Attic' at £51.77
+2026-10-16 18:47:25,213 [INFO] Scraped 'Tipping the Velvet' -> Current: £53.74
+2026-10-16 18:47:25,213 [INFO] Initialized baseline for 'Tipping the Velvet' at £53.74
+2026-10-16 18:47:26,437 [INFO] Scraped 'Soumission' -> Current: £50.10
+2026-10-16 18:47:26,437 [INFO] Initialized baseline for 'Soumission' at £50.10
+2026-10-16 18:47:27,652 [INFO] Scraped 'Sharp Objects' -> Current: £47.82
+2026-10-16 18:47:27,652 [INFO] Initialized baseline for 'Sharp Objects' at £47.82
+2026-10-16 18:47:27,657 [INFO] Audit cycle complete. Alerts dispatched: 0
+
+2026-10-16 18:47:27,657 [INFO] Scheduler active. Waiting for next interval (Press Ctrl+C to stop)...
+2026-10-16 18:50:23,492 [INFO] Scheduler stopped by user.

@@ -105,3 +105,15 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Implements automated anomaly comparison logic triggering deal alerts when `current_price < historical_min * 0.95`.
   * Logs ISO timestamps on every run to build a continuous pricing audit trail.
   * Dispatches rich Discord webhook embeds when significant discounts are detected.
+
+
+---
+
+### Day 10: Demo 2 Release - Task Scheduling & Automated Auditing (`Day_10/`)
+* **Problem Solved:** Price tracking scripts fail to provide value if they require manual terminal execution and lack persistent runtime diagnostic logs.
+* **Tech Used:** `schedule`, `logging`, `requests`, `beautifulsoup4`, `python-dotenv`, `json`
+* **Features:**
+  * Configures an automated task scheduler using Python's declarative `schedule` module for hands-free background execution.
+  * Replaces console prints with production-grade file logging (`tracker.log`) tracking process timestamps, network responses, and alerts.
+  * Implements dynamic anomaly detection triggering instant Discord webhook alerts upon detecting a $\ge 5\%$ drop from historical lows.
+  * Maintains a JSON audit history appending time-series pricing data for every scrape interval.

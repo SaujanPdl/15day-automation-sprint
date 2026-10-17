@@ -117,3 +117,14 @@ A collection of lightweight Python automation scripts, data wrangling pipelines 
   * Replaces console prints with production-grade file logging (`tracker.log`) tracking process timestamps, network responses, and alerts.
   * Implements dynamic anomaly detection triggering instant Discord webhook alerts upon detecting a $\ge 5\%$ drop from historical lows.
   * Maintains a JSON audit history appending time-series pricing data for every scrape interval.
+
+---
+
+### Day 11: Standalone Windows Executable Packaging (`Day_11/`)
+* **Problem Solved:** Non-technical corporate clients cannot run command-line tools or install Python runtimes and dependencies.
+* **Tech Used:** `pyinstaller`, `tkinter`, `pandas`, `openpyxl`, `pathlib`
+* **Features:**
+  * Packages automation pipelines into an isolated, single-file Windows executable (`.exe`) via PyInstaller.
+  * Resolves internal temp assets and bundled configurations using `sys._MEIPASS` dynamic path resolution.
+  * Suppresses the terminal console (`--windowed`) in favor of native OS dialog boxes for a seamless end-user experience.
+  * Operates fully standalone on clean client machines without requiring pre-installed Python interpreters or virtual environments.
